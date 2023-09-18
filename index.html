@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coding Quiz Challenge</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <a id="viewHighScoreLink" href="./highscores.html">View High Score</a>
+    <div class="timer">
+        Time: <span id="timeLeft"> 60</span> seconds
+    </div>
+    <div class="container">
+        <div class="header">
+        </div>
+        <div class="home_page">
+            <h1 class="title">Coding Quiz Challenge</h1>
+            <p class="advice">Try to answer the following code-related questions within the time limit. Keep in mind
+                that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button id="startButton">Start Quiz</button>
+        </div>
+        <div class="quiz-container" style="display: none;">
+            <p class="question"></p>
+            <div class="choices"></div>
+        </div>
+        <div class="score" style="display: none;">
+            <span class="score_title">Your Score: </span>
+            <span id="finalScore">0</span>
+            <br>
+            Enter your name: <input type="text" id="nameInput">
+            <button id="saveScoreButton">Save Score</button>
+        </div>
+        <div class="high-scores" style="display: none;">
+        </div>
+        <button id="restartButton" style="display: none;">Restart Quiz</button>
+        <div class="highScore_wrap">
+            <ul id="highScoresList">
+            </ul>
+            <button id="closeButton" style="display: none;">Close</button>
+        </div>
+
+    </div>
+
     <script src="./js/script.js"></script>
+    <script src="./js/questions.js"></script>
 </body>
+
 </html>
