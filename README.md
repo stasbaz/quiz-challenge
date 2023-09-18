@@ -17,4 +17,4 @@ This Quiz Challenge is a quiz game that allows users to test their knowledge by 
 
 ## Links
 - Link of GitHub URL: (https://github.com/stasbaz/quiz-challenge)
-- Link of deployed repository: 
+- Link of deployed repository: (https://stasbaz.github.io/quiz-challenge/)
